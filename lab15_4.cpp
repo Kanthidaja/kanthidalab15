@@ -19,3 +19,24 @@ int main(){
 }
 
 //Do not modify source code above this line
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int e = *&a, f = *&b, g = *&c, h = *&d;
+	int random = rand()%3+1;
+	if(random==1){
+     a = e;
+	 b = f;
+	 c = h;
+	 d = g;
+	}else if(random==2){
+     a = f;
+	 b = g;
+	 c = e;
+	 d = h;
+	}else{
+     a = h;
+	 b = e;
+	 c = f;
+	 d = g;
+}
+}
